@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid red; */
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +40,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: "ImpactFree";
+  src: url("impact.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+.meme-img {
+  width: 400px;
+  height: auto;
+}
+
+.userInput {
+  display: block;
+}
+
+.captionContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.captionText {
+  position: absolute;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  overflow: hidden;
+}
+
+.topText {
+  top: 20px;
+  margin: auto 0;
+  font-family: "ImpactFree", Fallback, sans-serif;
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+.bottomText {
+  bottom: 20px;
+  margin: auto 0;
+  font-family: "ImpactFree", Fallback, sans-serif;
+  font-weight: bolder;
+  font-size: 2.5em;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+h1 {
+  color: #00ead3;
+}
+input[type="text"] {
+  width: 100%;
+  margin: 5%;
+}
+input[type="file"] {
+  margin: 5%;
+  display: block;
 }
